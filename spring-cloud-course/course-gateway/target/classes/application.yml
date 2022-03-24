@@ -1,0 +1,15 @@
+server:
+  port: 9000
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: coursesModule
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/courses/**
+        - id: coursePriceModule
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/price/**
