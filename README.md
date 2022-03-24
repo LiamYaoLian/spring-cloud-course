@@ -4,6 +4,7 @@ modules: course list service, course price service
 
 course price service calls course list service
 
+Using:
 1. Eureka
 2. Feign
 3. Ribbon
